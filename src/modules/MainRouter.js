@@ -4,6 +4,7 @@ import { Router, Route, browserHistory } from 'react-router';
 import App from './App';
 import HomePage from '../pages/HomePage';
 import SettingsPage from '../pages/SettingsPage';
+import MyUnitsPage from '../pages/MyUnitsPage';
 
 export default class MainRouter extends Component {
   constructor() {
@@ -41,6 +42,7 @@ export default class MainRouter extends Component {
         <Route component={this.appWithPersistentNav()}>
           <Route path="/" component={HomePage} />
           <Route path="/settings" component={SettingsPage} />
+          <Route path="/myunits" component={MyUnitsPage} />
         </Route>
       </Router>
     );
